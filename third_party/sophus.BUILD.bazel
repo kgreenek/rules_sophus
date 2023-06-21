@@ -1,0 +1,6 @@
+cc_library(
+    name = "sophus",
+    hdrs = glob(["sophus/*.hpp"], exclude = ["sophus/ceres*.hpp"]),
+    deps = ["@eigen"],
+    visibility = ["//visibility:public"],
+)
