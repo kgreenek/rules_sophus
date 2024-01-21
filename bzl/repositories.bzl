@@ -20,3 +20,12 @@ def sophus_repositories():
         strip_prefix = "Sophus-1.22.10",
         urls = ["https://github.com/strasdat/Sophus/archive/refs/tags/1.22.10.tar.gz"],
     )
+
+    maybe(
+        http_archive,
+        name = "fmt",
+        build_file = "@rules_sophus//third_party:fmt.BUILD.bazel",
+        sha256 = "1250e4cc58bf06ee631567523f48848dc4596133e163f02615c97f78bab6c811",
+        strip_prefix = "fmt-10.2.1",
+        urls = ["https://github.com/fmtlib/fmt/archive/refs/tags/10.2.1.tar.gz"],
+    )
