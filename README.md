@@ -11,9 +11,9 @@ In your WORKSPACE.bazel file:
 ```
 http_archive(
     name = "rules_sophus",
-    sha256 = "133caa2662fd31eeb8e986312dc1d8022a769527d186665464fda0dc80c24768",
-    strip_prefix = "rules_sophus-sophus-1.22.10-v1",
-    urls = ["https://github.com/kgreenek/rules_sophus/archive/refs/tags/sophus-1.22.10-v1.tar.gz"],
+    sha256 = "b3a866cef671f3f1a65a397a1ba78be08b90c495ccc1b17f882844d233d42298",
+    strip_prefix = "rules_sophus-sophus-1.22.10-v2",
+    urls = ["https://github.com/kgreenek/rules_sophus/archive/refs/tags/sophus-1.22.10-v2.tar.gz"],
 )
 
 load("@rules_sophus//bzl:repositories.bzl", "sophus_repositories")
